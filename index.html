@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House with Tailwind CSS</title>
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/c4e7b2ed2f.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+      .manrope-font{
+           font-family: "Manrope", sans-serif;
+          
+}
+    </style>
+</head>
+<body class="manrope-font">
+
+ <!-- Main content -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-20">
+    <!-- Header section -->
+     <header class="lg:flex pt-10 mb-20">
+          <div>
+            <!-- Text Content -->
+           <h1 class="text-5xl md:text-7xl font-bold">It's good<br> tea time at The<br> Tea House</h1>
+           <br>
+           <p class="text-gray-500 w-3/4">
+            The Tea House is the perfect place to unwind
+            and enjoy a peaceful moment.<br>
+           </p>
+           <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Explore More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+          </div>
+            <!-- Image Content -->
+          <div class="relative">
+          <div>
+            <img class="w-full" src="images/banner.png">
+           </div>
+           <!-- Card -->
+            <div class="absolute flex justify-center items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-20 md:top-80 md:left-32 lg:left-20">
+              <!-- Icon -->
+              <div>
+                <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+              </div>
+              <!-- Text -->
+               <div class="ml-2">
+                <h2 class="lg:text-2xl font-bold">5.00</h2>
+                <p class="text-gray-500">Trust Pilot Ratings</p>
+               </div>
+            </div>
+          </div>
+     </header>
+     <!-- Featured Products Section -->
+      <section class="py-8 lg:py-24">
+        <!-- Title -->
+         <div class="text-center">
+          <h1 class="text-3xl md:text-4xl font-bold mb-5">Our Featured Products</h1>
+          <p class="text-gray-600 max-auto">Our featured products at The Tea House are carefully selected to offer you the finest tea experience.<br> Each blend is crafted with premium ingredients, ensuring a rich and flavorful taste that delights the senses.</p>
+         </div>
+        <!-- Grid Card -->
+         <div class="grid lg:grid-cols-4 gap-6 text-center">
+         <!-- Products Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+           <img class="mx-auto pt-4" src="images/tea-2.png" alt="">
+          <div class="p-4">
+            <h2 class="font-bold text-xl">Milk Tea</h2>
+            <p class="">Creamer could be<br>replaced by fresh milk</p>
+          </div>
+          </div>
+          <!-- Products Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-3.png" alt="">
+           <div class="p-4">
+             <h2 class="font-bold text-xl">Black Tea</h2>
+             <p class="">Creamer could be<br>replaced by fresh milk</p>
+           </div>
+           </div>
+           <!-- Products Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-4.png" alt="">
+           <div class="p-4">
+             <h2 class="font-bold text-xl">Green Tea</h2>
+             <p class="">Creamer could be<br>replaced by fresh milk</p>
+           </div>
+           </div>
+           <!-- Products Card -->
+          <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
+           <div class="p-4">
+             <h2 class="font-bold text-xl">Lemon Tea</h2>
+             <p class="">Creamer could be<br>replaced by fresh milk</p>
+           </div>
+           </div>
+          </div>
+        
+      </section>
+      <!-- Great Tea Section -->
+       <section class="mb-24">
+         <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- Image Section -->
+           <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
+            <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"></div>
+            <div class="bg-orange-50 rounded-xl row-span-2">
+              <img class="mx-auto my-5" src="images/fresh-1.png" alt="Image cup of Tea">
+            </div>
+          
+            <div class="bg-stone-100 rounded-xl row-span-2">
+              <img class="mx-auto my-5" src="images/fresh-2.png" alt="Image cup of Tea">
+             
+            </div>
+            <div class="h-38 bg-gradient-to-r from-stone-200 to-stone-100 rounded-xl"></div>
+           </div>
+           <!-- Text Section -->
+            <div>
+              <h2 class="text-5xl font-bold mb-5">Great Tea, Freshly Presented</h2>
+              <p class="text-gray-500">
+                "Great Tea, Freshly Presented" captures the essence of a perfect cup of tea.
+                 It's the harmony of rich, aromatic flavors, carefully brewed to perfection.
+                 Every sip offers a refreshing experience, delivering warmth and comfort with each taste.
+              </p>
+              <br>
+              <h1 class="text-2xl font-bold mb-5">Unique Taste</h1>
+              <p class="text-gray-500">"Unique Taste" is the hallmark of an extraordinary experience.
+                  It’s a flavor that stands out, leaving a lasting impression on your palate. </p>
+                 <br>
+                 <h1 class="text-2xl font-bold mb-5">Premium Quality</h1>
+                 <p class="text-gray-500">"Premium Quality" signifies the highest standard of excellence.
+                  It embodies craftsmanship, attention to detail, and the use of the finest materials or ingredients.</p>
+            </div>
+         </div>
+       </section>
+    </main>
+</body>
+</html>
